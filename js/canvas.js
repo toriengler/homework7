@@ -14,9 +14,11 @@ document.querySelector('#clr').addEventListener("input", function(e) {
 
 //Listeners!!
 //Add a listener for loading the window
-
-canvas.width=window.innerWidth * .75;
-canvas.height=window.innerHeight * .75;
+window.addEventListener("load", function (e) {
+    ctx.canvas.width = window.innerWidth * .75
+    ctx.canvas.height = window.innerHeight * .75
+    ctx.fillStyle = color;
+})
 //Add a listener for the mouse movement
 
 
